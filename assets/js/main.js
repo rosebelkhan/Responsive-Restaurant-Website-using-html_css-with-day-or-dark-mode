@@ -103,5 +103,23 @@ sr.reveal(`.home__data, .home__img,
             .app__data, .app__img,
             .contact__data, .contact__button,
             .footer__content`, {
-    interval: 200
+    interval: 200,
+    easing: 'ease-in'
 })
+
+sr.reveal('.home__img', {
+    rotate: {
+        x: 20,
+        y: 20,
+        z: -20
+    }
+});
+
+sr.reveal('.about__img', { scale: 0.85 });
+sr.reveal('.app__img', { 
+    scale: 0.85, 
+    rotate: {
+        x: 20,
+        y: 20,
+        z: -20
+    }});
